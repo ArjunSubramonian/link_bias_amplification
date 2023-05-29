@@ -1,1 +1,1 @@
-# link_bias_amplification
+# Rich Get Richer: Unjust Degree Accumulation in Graphs
