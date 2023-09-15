@@ -94,9 +94,9 @@ class Nifty(InMemoryDataset):
 
         features = sp.csr_matrix(idx_features_labels[header], dtype=np.float32)
         if self.name == 'Credit':
-            labels = (idx_features_labels[predict_attr].values > 1).astype(float)
+            labels = (idx_features_labels[predict_attr].values > 1).astype(int)
         elif self.name == 'German':
-            labels = idx_features_labels[predict_attr].values
+            labels = idx_features_labels[predict_attr].values.astype(int)
         labels[labels == -1] = 0
         
         idx = np.arange(features.shape[0])
