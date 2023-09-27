@@ -70,7 +70,7 @@ class SayNo(InMemoryDataset):
         header.remove(predict_attr)
 
         features = sp.csr_matrix(idx_features_labels[header], dtype=np.float32)
-        labels = (idx_features_labels[predict_attr].values > 25).astype(float)
+        labels = (idx_features_labels[predict_attr].values > 25).astype(int)
 
         # build graph
         idx = np.array(idx_features_labels["user_id"], dtype=int)

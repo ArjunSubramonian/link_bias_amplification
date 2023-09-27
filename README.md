@@ -12,9 +12,7 @@ pip install -r requirements.txt
 
 ## Experiments
 
-To run the experiments validating our theoretical analysis, simply run `generate_plots.ipynb`.
-
-To run the fairness experiments, run `preferential_attachment_experiments.ipynb` with the appropriate datasets (i.e., NBA, German, or DBLPFairness) specified.
+To run the experiments validating our theoretical analysis, simply run `generate_plots.ipynb`. To run the fairness experiments, run `generate_fairness_plots.ipynb`.
 
 ## License
 
