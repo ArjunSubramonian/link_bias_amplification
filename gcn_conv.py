@@ -82,7 +82,7 @@ def gcn_norm(edge_index, edge_weight=None, num_nodes=None, flow="source_to_targe
     elif conv == "rw":
         deg_inv = deg.pow_(-1.0)
         deg_inv.masked_fill_(deg_inv == float('inf'), 0)
-        edge_weight = deg_inv[row] * edge_weight
+        edge_weight = edge_weight * deg_inv[col]
 
     return edge_index, edge_weight
 
