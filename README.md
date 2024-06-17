@@ -1,6 +1,6 @@
 # Networked Inequality: Preferential Attachment Bias in Graph Neural Network Link Prediction
 
-This repository is the official implementation of Networked Inequality: Preferential Attachment Bias in Graph Neural Network Link Prediction.
+This repository is the official implementation of `Networked Inequality: Preferential Attachment Bias in Graph Neural Network Link Prediction`.
 
 ## Requirements
 
